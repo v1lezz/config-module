@@ -15,7 +15,7 @@ type ServerConfig struct {
 
 func GetConfig(configPath string) (ServerConfig, error) {
 	if validateConfigPath(configPath) {
-		return ServerConfig{}, errors.New("incorrect path of config file")
+		return ServerConfig{}, errors.New("incorrect path config file")
 	}
 	file, err := os.Open(configPath)
 	if err != nil {
