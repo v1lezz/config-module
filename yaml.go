@@ -8,9 +8,9 @@ import (
 )
 
 type ServerConfig struct {
-	Host    string
-	Port    int
-	Timeout int
+	Host    string `yaml:"host"`
+	Port    int    `yaml:"port"`
+	Timeout int    `yaml:"timeout"`
 }
 
 func GetConfig(configPath string) (ServerConfig, error) {
