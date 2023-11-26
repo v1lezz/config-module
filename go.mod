@@ -1,4 +1,4 @@
-module config-module
+module github.com/v1lezz/config-module
 
 go 1.21
 
