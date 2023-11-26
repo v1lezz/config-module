@@ -1,4 +1,4 @@
-module conf-worker
+module config-module
 
 go 1.21
 
